@@ -124,72 +124,68 @@ bcode_lib = {
   6281055001424: {"Item": "Harvest Coconut Water (330 mL)", "Group": "Beverage", "Fat": 0, "Fiber": 0, "Sugars": 0, "Energy-kcal": 62, "Protein": 0, "Carbohydrates": 0, "Saturated-fat": 0},
   6281007120401: {"Item": "Almarai Fresh Milk (1 serving, 250 mL)", "Group": "Dairy", "Fat": 8, "Fiber": 0, "Sugars": 12, "Energy-kcal": 152, "Protein": 8.2, "Carbohydrates": 12, "Saturated-fat": 4.7}
 }
-#Fridge Contents
-fridge_data = {
-  5000159366243: {'Item': 'Twix', "Group": "Ultraprocessed", 'Count': 1},
-  6294001819226: {'Item': 'Snickers', "Group": "Ultraprocessed", "Count": 2},
-  6: {"Item": "85% Lean Ground Beef Broiled (100g)", "Group": "Meat", "Count": 3, "Fat": 15, "Fiber": 0, "Sugars": 0, "Energy-kcal": 250, "Protein": 26, "Carbohydrates": 0, "Saturated-fat": 6},
-  2: {"Item": "Orange", "Group": "Fruit", "Count": 12, "Fat": 0, "Fiber": 3.1, "Sugars": 12, "Energy-kcal": 60, "Protein": 1, "Carbohydrates": 15.4, "Saturated-fat": 0},
-  0o00307444: {"Item": "Trader Joe's Canadian White Bread (1 slice)", "Group": "Grain", "Count": 20,"Fat": 2, "Fiber": 0, "Sugars": 0, "Energy-kcal": 110, "Protein": 3, "Carbohydrates": 0, "Saturated-fat": 0},
-  967787396: {"Item": "Wholesome Harvest Wheat Bread (1 slice)", "Group": "Grain", "Count": 15, "Fat": 1.5, "Fiber": 3, "Sugars": 2, "Energy-kcal": 100, "Protein": 5, "Carbohydrates": 17, "Saturated-fat": 0},
-  3: {"Item": "Strawberries (1 cup or 166 grams)", "Group": "Fruit", "Count": 2,"Fat": 0, "Fiber": 3.3, "Sugars": 7, "Energy-kcal": 53, "Protein": 1.11, "Carbohydrates": 12.7, "Saturated-fat": 0},
-  4: {"Item": "Potato (100 grams)", "Group": "Vegetable", "Count": 1, "Fat": 0.1, "Fiber": 2.2, "Sugars": 0.8, "Energy-kcal": 77, "Protein": 2, "Carbohydrates": 17, "Saturated-fat": 0},
+
+
+
+data_lib = {
+    #User Data
+    'saud_data': {
+    5000159366243: {'Item': 'Twix', "Group": "Ultraprocessed", 'Count': 1, 'Fat': 23.7, 'Fiber': 1.1, "Sugars":   48.8, "Energy-kcal":    495, "Protein":   4.5, "Carbohydrates":   64.6, "Saturated-fat":  13.7},
+    6: {"Item": "85% Lean Ground Beef Broiled (100g)", "Group": "Meat", "Count": 1, "Fat": 15, "Fiber": 0, "Sugars": 0, "Energy-kcal": 250, "Protein": 26, "Carbohydrates": 0, "Saturated-fat": 6},
+    4: {"Item": "Potato (100 grams)", "Group": "Vegetable", "Count": 1, "Fat": 0.1, "Fiber": 2.2, "Sugars": 0.8, "Energy-kcal": 77, "Protein": 2, "Carbohydrates": 17, "Saturated-fat": 0},
+    2: {"Item": "Orange", "Group": "Fruit", "Count": 2, "Fat": 0, "Fiber": 3.1, "Sugars": 12, "Energy-kcal": 60, "Protein": 1, "Carbohydrates": 15.4, "Saturated-fat": 0},
+    967787396: {"Item": "Wholesome Harvest Wheat Bread (1 slice)", "Group": "Grain", "Count": 3, "Fat": 1.5, "Fiber": 3, "Sugars": 2, "Energy-kcal": 100, "Protein": 5, "Carbohydrates": 17, "Saturated-fat": 0},
+    3: {"Item": "Strawberries (1 cup or 166 grams)", "Group": "Fruit", "Count": 3, "Fat": 0, "Fiber": 3.3, "Sugars": 7, "Energy-kcal": 53, "Protein": 1.11, "Carbohydrates": 12.7, "Saturated-fat": 0}
+    },
+    'basma_data': {
+    5000159366243: {'Item': 'Twix', "Group": "Ultraprocessed", 'Count': 4, 'Fat': 23.7, 'Fiber':1.1, "Sugars":   48.8, "Energy-kcal":    495, "Protein":   4.5, "Carbohydrates":   64.6, "Saturated-fat":  13.7},
+    6294001819226: {"Item": "Snickers", "Group": "Ultraprocessed", "Count": 5, "Fat":     6.2, "Fiber":   0.5, "Sugars":  12.4, "Energy-kcal":    124, "Protein": 7, "Carbohydrates":       12.4, "Saturated-fat":  2.5}
+    },
+    'bedbed_data': {
+    6294001819226: {"Item": "Snickers", "Group": "Ultraprocessed", "Count": 1, "Fat":     6.2, "Fiber":   0.5, "Sugars":  12.4, "Energy-kcal":    124, "Protein": 7, "Carbohydrates":       12.4, "Saturated-fat":  2.5}
+    },
+    'mohammad_data': {},
+    'sara_data': {
+    5000159366243: {'Item': 'Twix', "Group": "Ultraprocessed", 'Count': 4, 'Fat': 23.7, 'Fiber':1.1, "Sugars":   48.8, "Energy-kcal":    495, "Protein":   4.5, "Carbohydrates":   64.6, "Saturated-fat":  13.7}
+    },
 
 }
 
-#User Data
-saud_data = {
-  5000159366243: {'Item': 'Twix', "Group": "Ultraprocessed", 'Count': 1, 'Fat': 23.7, 'Fiber': 1.1, "Sugars":   48.8, "Energy-kcal":    495, "Protein":   4.5, "Carbohydrates":   64.6, "Saturated-fat":  13.7},
-  6: {"Item": "85% Lean Ground Beef Broiled (100g)", "Group": "Meat", "Count": 1, "Fat": 15, "Fiber": 0, "Sugars": 0, "Energy-kcal": 250, "Protein": 26, "Carbohydrates": 0, "Saturated-fat": 6},
-  4: {"Item": "Potato (100 grams)", "Group": "Vegetable", "Count": 1, "Fat": 0.1, "Fiber": 2.2, "Sugars": 0.8, "Energy-kcal": 77, "Protein": 2, "Carbohydrates": 17, "Saturated-fat": 0},
-  2: {"Item": "Orange", "Group": "Fruit", "Count": 2, "Fat": 0, "Fiber": 3.1, "Sugars": 12, "Energy-kcal": 60, "Protein": 1, "Carbohydrates": 15.4, "Saturated-fat": 0},
-  967787396: {"Item": "Wholesome Harvest Wheat Bread (1 slice)", "Group": "Grain", "Count": 3, "Fat": 1.5, "Fiber": 3, "Sugars": 2, "Energy-kcal": 100, "Protein": 5, "Carbohydrates": 17, "Saturated-fat": 0},
-  3: {"Item": "Strawberries (1 cup or 166 grams)", "Group": "Fruit", "Count": 3, "Fat": 0, "Fiber": 3.3, "Sugars": 7, "Energy-kcal": 53, "Protein": 1.11, "Carbohydrates": 12.7, "Saturated-fat": 0}}
-
-basma_data = {
-  5000159366243: {'Item': 'Twix', "Group": "Ultraprocessed", 'Count': 4, 'Fat': 23.7, 'Fiber':1.1, "Sugars":   48.8, "Energy-kcal":    495, "Protein":   4.5, "Carbohydrates":   64.6, "Saturated-fat":  13.7},
-  6294001819226: {"Item": "Snickers", "Group": "Ultraprocessed", "Count": 5, "Fat":     6.2, "Fiber":   0.5, "Sugars":  12.4, "Energy-kcal":    124, "Protein": 7, "Carbohydrates":       12.4, "Saturated-fat":  2.5}}
-bedbed_data = {
-  6294001819226: {"Item": "Snickers", "Group": "Ultraprocessed", "Count": 1, "Fat":     6.2, "Fiber":   0.5, "Sugars":  12.4, "Energy-kcal":    124, "Protein": 7, "Carbohydrates":       12.4, "Saturated-fat":  2.5}}
-mohammad_data = {}
-sara_data = {
-  5000159366243: {'Item': 'Twix', "Group": "Ultraprocessed", 'Count': 4, 'Fat': 23.7, 'Fiber':1.1, "Sugars":   48.8, "Energy-kcal":    495, "Protein":   4.5, "Carbohydrates":   64.6, "Saturated-fat":  13.7}}
 
 
+history_lib = {
 
-#User History
-saud_history = {
-  5000159366243: {'Item': 'Twix', 'Count': 1, "Time": ['5:40']},
-  6: {"Item": "85% Lean Ground Beef Broiled (100g)", "Count": 1, 'Time': ['5:30']},
-  4: {"Item": "Potato (100 grams)", "Count": 1, 'Time': ['7:45']},
-  2: {"Item": "Orange", "Count": 2, "Time": ['9:03', '11:30']},
-  967787396: {"Item": "Wholesome Harvest Wheat Bread (1 slice)", "Count": 3, "Time": ['6:50', '12:07', '12:53']},
-  3: {"Item": "Strawberries (1 cup or 166 grams)", "Count": 3, "Time": ['6:30', '12:57', '16:53']}
+    #User History
+    'saud_history': {
+    5000159366243: {'Item': 'Twix', 'Count': 1, "Time": ['5:40']},
+    6: {"Item": "85% Lean Ground Beef Broiled (100g)", "Count": 1, 'Time': ['5:30']},
+    4: {"Item": "Potato (100 grams)", "Count": 1, 'Time': ['7:45']},
+    2: {"Item": "Orange", "Count": 2, "Time": ['9:03', '11:30']},
+    967787396: {"Item": "Wholesome Harvest Wheat Bread (1 slice)", "Count": 3, "Time": ['6:50', '12:07', '12:53']},
+    3: {"Item": "Strawberries (1 cup or 166 grams)", "Count": 3, "Time": ['6:30', '12:57', '16:53']}
+
+    },
+
+    'basma_history': {
+    5000159366243: {'Item': 'Twix', 'Count': 4, "Time": ["3:15", "3:30", '4:18', '5:50']},
+    6294001819226: {"Item": "Snickers","Count": 5, "Time": ["18:53", "19:17", '20:03', "20:07", "22:31"]}},
+    'bedbed_history': {
+    6294001819226: {"Item": "Snickers",  "Count": 1, "Time": ['13:18']}},
+    'mohammad_history': {},
+    'sara_history': {
+    5000159366243: {'Item': 'Twix', 'Count': 4, 'Time': ['3:45', '14:45', '17:30', '8:23']}
+    },
 
 }
-
-basma_history = {
-  5000159366243: {'Item': 'Twix', 'Count': 4, "Time": ["3:15", "3:30", '4:18', '5:50']},
-  6294001819226: {"Item": "Snickers","Count": 5, "Time": ["18:53", "19:17", '20:03', "20:07", "22:31"]}}
-bedbed_history = {
-  6294001819226: {"Item": "Snickers",  "Count": 1, "Time": ['13:18']}}
-mohammad_history = {}
-sara_history = {
-  5000159366243: {'Item': 'Twix', 'Count': 4, 'Time': ['3:45', '14:45', '17:30', '8:23']}
-  }
-
 
 
 
 accounts = {
-  'Saud': {'Password': '1234', 'f_print' : 0, 'access_lib': saud_data, 'access_h': saud_history}, 
-  'Basma': {'Password': '1234', 'f_print' : 1, 'access_lib': basma_data, 'access_h': basma_history}, 
-  'Bedbed': {'Password': '1234', 'f_print' : 2, 'access_lib': bedbed_data, 'access_h': bedbed_history}, 
-  'Mohammad': {'Password': '1234', 'f_print' : 3, 'access_lib': mohammad_data, 'access_h': mohammad_history}, 
-  'Sara': {'Password': '1234', 'f_print' : 4, 'access_lib': sara_data, 'access_h': sara_history}}
-
-
-
+  'Saud': {'Password': '1234', 'f_print' : 0, 'access_lib': data_lib['saud_data'], 'access_h': history_lib['saud_history']}, 
+  'Basma': {'Password': '1234', 'f_print' : 1, 'access_lib': data_lib['basma_data'], 'access_h': history_lib['basma_history']}, 
+  'Bedbed': {'Password': '1234', 'f_print' : 2, 'access_lib': data_lib['bedbed_data'], 'access_h': history_lib['bedbed_history']}, 
+  'Mohammad': {'Password': '1234', 'f_print' : 3, 'access_lib': data_lib['mohammad_data'], 'access_h': history_lib['mohammad_history']}, 
+  'Sara': {'Password': '1234', 'f_print' : 4, 'access_lib': data_lib['sara_data'], 'access_h': history_lib['sara_history']}}
 
 
 
