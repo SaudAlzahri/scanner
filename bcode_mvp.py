@@ -190,3 +190,84 @@ accounts = {
 
 
 
+
+
+
+
+########################################################################PART 2: GETTING BCODE (CAMERA AND BARCODE SCANNER)
+#getting bcode from camera
+#if nothng detected, get from barcode scanner
+
+f = PyFingerprint('/dev/ttyUSB0', 57600, 0xFFFFFFFF, 0x00000000)
+import cv2
+import torch
+from skimage import io
+
+# Capturing video through channel 0
+video = cv2.VideoCapture(0)
+
+# Model
+model = torch.hub.load('ultralytics/yolov5', 'yolov5s')
+
+
+from PIL import Image
+from pyzbar.pyzbar import decode
+print('SCAN NOW')
+#In this while loop shall be part 2, 3
+try:
+    while True:
+        positionNumber = scan_fprint()
+
+
+        for account in accounts:
+            if positionNumber == accounts[account]['f_print']:
+                person = account
+                print('hi', person)
+        
+        while f.readImage() == False:
+
+            #bcode verification
+            bcode_reality = True
+
+            check, frame = video.read()
+
+            # Inference
+            results = model(frame)
+            print(results)
+
+            #Get barcode (replace with scalable lib method)
+            if 'banana' in str(results):
+                bcode = 7
+                bcode_act()
+            elif 'apple' in str(results):
+                bcode = 1
+                bcode_act()
+            elif 'orange' in str(results):
+                bcode = 2
+                bcode_act()
+            elif 'broccoli' in str(results):
+                bcode = 8
+                bcode_act()
+            elif 'carrot' in str(results):
+                bcode = 5
+                bcode_act()
+            else:
+
+
+                # use camera to detect barcodes
+
+
+                decoded_list = decode(frame)
+                print(decoded_list)
+                count = 0
+                while (count + 1) <= len(decoded_list) and len(decoded_list) != 0:
+                    trash, bcode, trash, trash, trash, trash, trash = str(decoded_list[count]).split("'")
+                    print(bcode)
+                    bcode_act()
+                    count +=1
+
+except KeyboardInterrupt:   #CLOSING (CTR-C)    #Now do part 4, 5 & 6
+    video.release()
+    cv2.destroyAllWindows()
+
+
