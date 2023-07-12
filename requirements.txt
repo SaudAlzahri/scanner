@@ -3,7 +3,6 @@ pyfingerprint
 datetime
 
 
-cv2
 torch
 skimage
 
