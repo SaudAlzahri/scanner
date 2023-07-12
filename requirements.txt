@@ -4,5 +4,5 @@ datetime
 
 
 torch
-skimage
+scikit-image
 
